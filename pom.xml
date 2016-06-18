@@ -4,7 +4,7 @@
 
   <groupId>actors</groupId>
   <artifactId>actors</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.1</version>
   <build>
     <finalName>actors</finalName>
     <plugins>
@@ -42,7 +42,6 @@
   </properties>
 
   <dependencies>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
