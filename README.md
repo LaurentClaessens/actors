@@ -4,6 +4,12 @@ It provides an actor system.
 
 The project [frtex](https://github.com/LaurentClaessens/frtex) uses this actor system for reading a LaTeX file and return a new LaTeX file in which the "\input" are (recursively) replaced by the content.
 
+### Installation and test
+
+* download the actor system from [github](https://github.com/LaurentClaessens/actors)
+* Use it by example performing the tests :
+<pre><code>mvn  test</code></pre>
+
 ## General classes
 
 * `Message`
@@ -129,6 +135,3 @@ The skeleton is from [rcardin](https://github.com/rcardin/pcd-actors), but I got
 * I removed the base 'abstract' first implementation.
 * I removed the interfaces
 
-### TEST
-
-use `mvn test` to see the result.
