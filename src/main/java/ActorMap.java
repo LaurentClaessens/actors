@@ -31,15 +31,13 @@ import actors.exceptions.ShouldNotHappenException;
 import actors.DecentActor;
 
 
-/*
-     ACTOR MAP
-
+/**
 It links actor references to the actual actor and to the activity status. 
-
+<p>
  The 'ActorMap' is mainly a wrapper for the two needed maps : 
- - one maps actor references to actual actors 
- - one maps actor references to the activity status.
-//*/
+ <li> one maps actor references to actual actors 
+ <li> one maps actor references to the activity status.
+*/
 
 public class ActorMap 
 {
@@ -62,14 +60,7 @@ public class ActorMap
         {
             a = ref_to_actor.get(reference);
         }
-        if (a==null)
-        {
-            synchronized(ref_to_actor)
-            {
-                System.out.println("Debug 3746-24690 : The reference list is :"+actors_ref_list());
-            }
-            throw new ShouldNotHappenException("You are looking for a non existing actor");
-        }
+        if (a==null) { throw new ShouldNotHappenException("You are looking for a non existing actor"); }
         return a;
     }
     public void put(DecentActorRef reference, DecentActor actor)
